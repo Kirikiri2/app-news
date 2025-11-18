@@ -28,12 +28,14 @@ THIRD_PATY_APPS = [
 ]
 
 # Список локальных приложений
-LOCAL_APS = [
-    'apps.accounts'
+LOCAL_APPS = [
+    'apps.accounts',
+    'apps.main',
+    'apps.comments',
 ]
 
 # Общий список приложений
-INSTALLED_APPS = DJANGO_APPS + THIRD_PATY_APPS + LOCAL_APS
+INSTALLED_APPS = DJANGO_APPS + THIRD_PATY_APPS + LOCAL_APPS
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
